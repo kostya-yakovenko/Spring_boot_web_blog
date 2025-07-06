@@ -68,3 +68,9 @@ MySQL
 MAMP
 
 phpMyAdmin
+
+MySQL
+
+MAMP
+
+phpMyAdmin
