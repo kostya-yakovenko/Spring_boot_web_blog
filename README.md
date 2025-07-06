@@ -1,76 +1,34 @@
-Blog Web Application
-This is a simple web blog project that implements full CRUD operations (Create, Read, Update, Delete) for blog posts.
+# Blog Web Application
 
-Features
-Create, edit, and delete blog posts
+A lightweight Java Spring Boot web blog that supports full CRUD operations for posts. It uses MySQL via MAMP/phpMyAdmin for data storage. Designed for learning and demonstration purposes with a simple and clean structure.
 
-View a list of all posts
+## Features
 
-View individual post details
+- Create, read, update, and delete blog posts
+- View post list and post details
+- MySQL database integration via phpMyAdmin
+- Runs locally using MAMP
 
-Connected to a MySQL database via phpMyAdmin
+## Requirements
 
-Developed using Java & Spring Boot
+- Java 17+
+- Maven
+- MAMP
+- MySQL (phpMyAdmin)
 
-Database configured and run using MAMP
+## Setup Instructions
 
-Setup Instructions
-1. Requirements
-Java 17+
-
-Maven
-
-MAMP (with Apache & MySQL)
-
-MySQL (via phpMyAdmin)
-
-2. Database Setup
-Start MAMP.
-
-Open phpMyAdmin by navigating to http://localhost:8888/phpMyAdmin.
-
-Create a new database, for example: blog_db.
-
-Import the SQL schema if available or let the application auto-create tables.
-
-3. Default Ports
-Apache: 8888
-
-MySQL: 8889
-
-4. Application Configuration
-Ensure that your application.properties or application.yml file contains something like:
+1. Start MAMP and phpMyAdmin (`http://localhost:8888/phpMyAdmin`)
+2. Create a database (e.g. `blog_db`)
+3. Configure `application.properties`:
 
 properties
-Копіювати
-Редагувати
-spring.datasource.url=jdbc:mysql://localhost:8889/blog_db
+`spring.datasource.url=jdbc:mysql://localhost:8889/blog_db
 spring.datasource.username=root
 spring.datasource.password=root
-spring.jpa.hibernate.ddl-auto=update
-5. Run the Application
-bash
-Копіювати
-Редагувати
-./mvnw spring-boot:run
-Then visit:
-http://localhost:8080 — Main application page
+spring.jpa.hibernate.ddl-auto=update`
 
-Technologies Used
-Java 17
+## Run the application:
+`./mvnw spring-boot:run`
 
-Spring Boot
-
-Thymeleaf
-
-MySQL
-
-MAMP
-
-phpMyAdmin
-
-MySQL
-
-MAMP
-
-phpMyAdmin
+Visit the app at: `http://localhost:8080`
